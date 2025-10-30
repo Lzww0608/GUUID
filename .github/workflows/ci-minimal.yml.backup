@@ -1,0 +1,32 @@
+# 极简版 CI 配置（备选方案）
+# 如果需要最精简的 CI，可以用这个替换 ci.yml
+#
+# 特点：
+# - 只在 Linux + Go 1.23 运行
+# - 只运行测试，不做其他检查
+# - 最快速度通过 CI
+
+name: CI Minimal
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.23'
+
+    - name: Run tests
+      run: go test -v ./...
+
