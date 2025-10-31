@@ -60,6 +60,10 @@ func (g *Generator) NewWithTime(t time.Time) (UUID, error) {
 			g.lastTimestamp = timestamp
 		}
 	} else {
+		/*
+		 *The 12-bit rand_a field and the 62-bit rand_b field SHOULD be filled with
+		 *random data, such as from a cryptographically secure random number generator.
+		 */
 		// New millisecond, generate new random clock sequence
 		var randBytes [2]byte
 		if _, err := io.ReadFull(g.randReader, randBytes[:]); err != nil {

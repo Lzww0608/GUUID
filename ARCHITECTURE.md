@@ -285,24 +285,6 @@ func DecodeFromNewFormat(s string) (UUID, error) {
 3. 实现生成逻辑
 4. 添加相应的测试
 
-## 维护指南
-
-### 代码规范
-- 遵循 Go 官方代码风格
-- 所有导出符号必须有文档注释
-- 使用 `golangci-lint` 进行静态检查
-
-### 提交规范
-- 使用 Conventional Commits 规范
-- 每个 PR 必须包含测试
-- 保持测试覆盖率不降低
-
-### 发布流程
-1. 更新版本号（语义化版本）
-2. 更新 CHANGELOG.md
-3. 创建 Git 标签
-4. 发布 GitHub Release
-
 ## 依赖管理
 
 本项目**零外部依赖**，仅使用 Go 标准库：

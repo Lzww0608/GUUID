@@ -378,22 +378,3 @@ cd examples/basic && go run main.go
 cd examples/performance && go run main.go
 cd examples/database && go run main.go
 ```
-
-### 10. 下一步
-
-- 📖 阅读 [README.md](README.md) 了解项目详情
-- 🏗️ 阅读 [ARCHITECTURE.md](ARCHITECTURE.md) 了解架构设计
-- 🤝 阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 参与贡献
-- 📊 查看基准测试：`make bench`
-- 🧪 运行测试：`make test`
-
-## 获取帮助
-
-- 📧 提交 Issue: https://github.com/lab2439/guuid/issues
-- 📚 查看文档: https://pkg.go.dev/github.com/lab2439/guuid
-- ⭐ Star 项目: https://github.com/lab2439/guuid
-
----
-
-**Happy Coding! 🚀**
-
