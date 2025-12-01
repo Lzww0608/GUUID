@@ -282,8 +282,7 @@ func main() {
 				if err != nil {
 					log.Println(err)
 				} else {
-					// Uncomment the following to print generated IDs:
-					// fmt.Println(id)
+					fmt.Println(id)
 				}
 			}
 		}()
@@ -293,5 +292,5 @@ func main() {
 
 	// Prevent program from exiting to observe Zookeeper heartbeat updates.
 	// (Remove/select{} in real production service/supervisor)
-	select {}
+	//select {}
 }
