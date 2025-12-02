@@ -1,4 +1,4 @@
-module github.com/lab2439/guuid
+module github.com/Lzww0608/guuid
 
 go 1.21.0
 

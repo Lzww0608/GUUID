@@ -5,7 +5,7 @@
 ### 1. 安装
 
 ```bash
-go get github.com/lab2439/guuid
+go get github.com/Lzww0608/guuid
 ```
 
 ### 2. 第一个程序
@@ -18,7 +18,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/lab2439/guuid"
+    "github.com/Lzww0608/guuid"
 )
 
 func main() {
